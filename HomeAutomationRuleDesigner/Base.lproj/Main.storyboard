@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iW7-fO-uea">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rule Designer View Controller-->
+        <scene sceneID="D1S-hS-1Dj">
+            <objects>
+                <tableViewController storyboardIdentifier="RuleDesignerViewController" id="Weo-9f-l4T" customClass="RuleDesignerViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WKp-Qr-PBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kLu-Jg-O4K">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kLu-Jg-O4K" id="Xqy-0j-v8R">
+                                    <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Weo-9f-l4T" id="vTy-35-ewL"/>
+                            <outlet property="delegate" destination="Weo-9f-l4T" id="xm2-GZ-qY7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ELE-eI-jm8"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlM-I9-F6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="149"/>
+        </scene>
+        <!--ShowJSON View Controller-->
+        <scene sceneID="HDQ-ou-p9S">
+            <objects>
+                <viewController storyboardIdentifier="ShowJSONViewController" id="U7i-dY-DO6" customClass="ShowJSONViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hyw-3s-EFB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ron-Vo-2SQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cmo-uf-9Wc">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gnf-pq-03A">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gnf-pq-03A" firstAttribute="leading" secondItem="Cmo-uf-9Wc" secondAttribute="leading" id="D1m-Qn-Mpc"/>
+                            <constraint firstItem="Gnf-pq-03A" firstAttribute="top" secondItem="Cmo-uf-9Wc" secondAttribute="top" id="TzJ-Lj-Meo"/>
+                            <constraint firstItem="ron-Vo-2SQ" firstAttribute="top" secondItem="Gnf-pq-03A" secondAttribute="bottom" id="m4x-W1-iLi"/>
+                            <constraint firstAttribute="trailing" secondItem="Gnf-pq-03A" secondAttribute="trailing" id="sOR-nD-8qM"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                    <connections>
+                        <outlet property="jsonTextView" destination="Gnf-pq-03A" id="gOH-dE-5Py"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCY-2l-7P8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="599.55022488755628"/>
+        </scene>
+        <!--Choose Object Type Controller-->
+        <scene sceneID="Wok-I6-LNd">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseObjectTypeController" id="S7o-za-q3J" customClass="ChooseObjectTypeController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="O9p-EE-F6D">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseObjectTypeCell" textLabel="aPx-b1-iT8" style="IBUITableViewCellStyleDefault" id="O39-xy-7bl">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O39-xy-7bl" id="Kr0-Oy-cEV">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aPx-b1-iT8">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S7o-za-q3J" id="eno-ad-qjC"/>
+                            <outlet property="delegate" destination="S7o-za-q3J" id="Nn7-SQ-ZoW"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GiP-fS-hT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2303" y="149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0nV-D7-FIF">
+            <objects>
+                <navigationController id="iW7-fO-uea" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0wM-8E-yQU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aDg-r0-21I" kind="relationship" relationship="rootViewController" id="1JG-Qb-mP1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEE-ro-xN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="149"/>
+        </scene>
+        <!--Rule List View Controller-->
+        <scene sceneID="4c7-TB-5PT">
+            <objects>
+                <tableViewController storyboardIdentifier="RuleListViewController" id="aDg-r0-21I" customClass="RuleListViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tx2-RV-nmA">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NHD-z1-JBV">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHD-z1-JBV" id="S1l-I3-L9e">
+                                    <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aDg-r0-21I" id="X9h-e1-nn6"/>
+                            <outlet property="delegate" destination="aDg-r0-21I" id="ocR-Wq-yAG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="let-wx-UIM"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KyY-tM-zaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="600"/>
+        </scene>
+        <!--Choose Operator View Controller-->
+        <scene sceneID="6Hd-IZ-hrW">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseOperatorViewController" id="aIl-g7-Y1L" customClass="ChooseOperatorViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yd4-fd-NmA">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseOperatorCell" textLabel="7PB-dw-6V7" style="IBUITableViewCellStyleDefault" id="keU-fA-U7M">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="keU-fA-U7M" id="Vkt-j4-XsC">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7PB-dw-6V7">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aIl-g7-Y1L" id="LRO-E7-kUp"/>
+                            <outlet property="delegate" destination="aIl-g7-Y1L" id="yLM-et-Ogp"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBK-de-jYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="600"/>
+        </scene>
+        <!--Choose Property Value Type View Controller-->
+        <scene sceneID="ge1-Zo-E63">
+            <objects>
+                <tableViewController storyboardIdentifier="ChoosePropertyValueTypeViewController" id="1kM-zc-IGx" customClass="ChoosePropertyValueTypeViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="65V-qc-SI7">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChoosePropertyValueTypeCell" textLabel="gN3-pu-SUQ" style="IBUITableViewCellStyleDefault" id="Uix-hM-6fi">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uix-hM-6fi" id="dZ9-fq-DIz">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gN3-pu-SUQ">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1kM-zc-IGx" id="Paz-cJ-FI4"/>
+                            <outlet property="delegate" destination="1kM-zc-IGx" id="Usf-aF-8Fw"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaG-Tp-hbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="1040"/>
+        </scene>
+        <!--Choose Action Type View Controller-->
+        <scene sceneID="eN5-DD-Fwu">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseActionTypeViewController" id="6Kz-hv-Isz" customClass="ChooseActionTypeViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tfa-pj-CrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseActionTypeCell" textLabel="3dt-2v-Elu" style="IBUITableViewCellStyleDefault" id="yIg-qW-UCZ">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yIg-qW-UCZ" id="Val-b6-6bX">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3dt-2v-Elu">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6Kz-hv-Isz" id="gfO-H7-aH4"/>
+                            <outlet property="delegate" destination="6Kz-hv-Isz" id="CmJ-hu-szw"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bf-Cj-Zf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="1448"/>
+        </scene>
+        <!--Choose Conditional Element Type View Controller-->
+        <scene sceneID="9Gj-aH-wsN">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseConditionalElementTypeViewController" id="pvP-tV-0HE" customClass="ChooseConditionalElementTypeViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LGg-vp-0X7">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseConditionalElementTypeCell" textLabel="Bsw-DT-BcZ" style="IBUITableViewCellStyleDefault" id="dWt-3T-Kcw">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWt-3T-Kcw" id="qvw-qc-yMt">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bsw-DT-BcZ">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pvP-tV-0HE" id="TXV-4A-Rye"/>
+                            <outlet property="delegate" destination="pvP-tV-0HE" id="laT-rG-IR9"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GL-sp-yxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="1861"/>
+        </scene>
+        <!--Choose Pattern Id List View Controller-->
+        <scene sceneID="zWN-sj-Rlu">
+            <objects>
+                <tableViewController storyboardIdentifier="ChoosePatternIdListViewController" id="erL-g2-rMw" customClass="ChoosePatternIdListViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="er8-5V-lCC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChoosePatternIdListCell" textLabel="uSF-Hy-2Hj" style="IBUITableViewCellStyleDefault" id="1UD-ar-IsQ">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1UD-ar-IsQ" id="iSW-bc-GV5">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uSF-Hy-2Hj">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="erL-g2-rMw" id="wA3-cG-dln"/>
+                            <outlet property="delegate" destination="erL-g2-rMw" id="jlh-Z5-3lI"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bqn-d7-CCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="2275"/>
+        </scene>
+        <!--Choose Object Property Controller-->
+        <scene sceneID="OUV-MO-Mm5">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseObjectPropertyController" id="XDv-1R-uhF" customClass="ChooseObjectPropertyController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TAl-9w-xEw">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseObjectPropertyCell" textLabel="kJq-JA-gqt" style="IBUITableViewCellStyleDefault" id="oxt-ax-wUz">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oxt-ax-wUz" id="LnI-Yf-zuD">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kJq-JA-gqt">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XDv-1R-uhF" id="jU2-PS-2ne"/>
+                            <outlet property="delegate" destination="XDv-1R-uhF" id="3iZ-bQ-PRZ"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qb-jf-yca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="149"/>
+        </scene>
+        <!--Choose Accumulate Result Type View Controller-->
+        <scene sceneID="KE4-9d-j9T">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseAccumulateResultTypeViewController" id="3Jf-Qk-oIb" customClass="ChooseAccumulateResultTypeViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kFk-8K-hcN">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseAccumulateResultTypeCell" textLabel="R6l-fb-ODI" style="IBUITableViewCellStyleDefault" id="2Fv-yY-nOA">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Fv-yY-nOA" id="G2x-UM-0ay">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R6l-fb-ODI">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3Jf-Qk-oIb" id="fpT-yG-h1b"/>
+                            <outlet property="delegate" destination="3Jf-Qk-oIb" id="b6L-xL-MG0"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eI-pI-6eE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3542" y="1861"/>
+        </scene>
+        <!--Choose Accumulate Result Operator View Controller-->
+        <scene sceneID="GmX-Kp-7O7">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseAccumulateResultOperatorViewController" id="ju7-he-e0w" customClass="ChooseAccumulateResultOperatorViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qn9-xz-xk4">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseAccumulateResultOperatorCell" textLabel="sHC-sA-I3p" style="IBUITableViewCellStyleDefault" id="RTq-oy-04B">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RTq-oy-04B" id="fvJ-Sf-cJm">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sHC-sA-I3p">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ju7-he-e0w" id="31x-Nc-CDI"/>
+                            <outlet property="delegate" destination="ju7-he-e0w" id="Vh6-z9-7h6"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Tp-gO-rnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4754" y="1861"/>
+        </scene>
+        <!--Choose Accumulate Window Type View Controller-->
+        <scene sceneID="pgH-9K-zK4">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseAccumulateWindowTypeViewController" id="z8U-of-Mus" customClass="ChooseAccumulateWindowTypeViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pxM-No-gFh">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseAccumulateWindowTypeCell" textLabel="FVK-cr-gCK" style="IBUITableViewCellStyleDefault" id="UWD-A2-mKX">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UWD-A2-mKX" id="P9i-MY-ESR">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FVK-cr-gCK">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z8U-of-Mus" id="zIt-QV-sba"/>
+                            <outlet property="delegate" destination="z8U-of-Mus" id="rPV-Mh-8gh"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRI-su-VQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5908" y="1861"/>
+        </scene>
+        <!--Choose Accumulate Calculate Type View Controller-->
+        <scene sceneID="9Ir-0L-F7R">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseAccumulateCalculateTypeViewController" id="i5G-DI-lRy" customClass="ChooseAccumulateCalculateTypeViewController" customModule="HomeAutomationRuleDesigner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hUi-Fi-E2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChooseAccumulateCalculateTypeCell" textLabel="JJu-0V-iOe" style="IBUITableViewCellStyleDefault" id="5Ez-O5-2o9">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ez-O5-2o9" id="0G4-Ea-0Wa">
+                                    <rect key="frame" x="0.0" y="0.0" width="628" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JJu-0V-iOe">
+                                            <rect key="frame" x="15" y="0.0" width="613" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="i5G-DI-lRy" id="hmq-0Y-E0i"/>
+                            <outlet property="delegate" destination="i5G-DI-lRy" id="f5I-Tj-BNA"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0r7-oO-9oz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7070" y="1861"/>
+        </scene>
+    </scenes>
+</document>

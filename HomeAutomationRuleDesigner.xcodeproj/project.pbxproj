@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B9878102073213F0084372F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877C92073213F0084372F /* Constants.swift */; };
+		6B9878112073213F0084372F /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877CA2073213F0084372F /* Macros.swift */; };
+		6B9878192073213F0084372F /* RuleDesignerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877EA2073213F0084372F /* RuleDesignerViewController.swift */; };
+		6B98781A2073213F0084372F /* RuleNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877EC2073213F0084372F /* RuleNameCell.swift */; };
+		6B98781B2073213F0084372F /* RuleNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877ED2073213F0084372F /* RuleNameCell.xib */; };
+		6B98781C2073213F0084372F /* RuleThenActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877EE2073213F0084372F /* RuleThenActionCell.swift */; };
+		6B98781D2073213F0084372F /* RuleThenActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877EF2073213F0084372F /* RuleThenActionCell.xib */; };
+		6B98781E2073213F0084372F /* RuleThenActionPropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877F02073213F0084372F /* RuleThenActionPropertyCell.swift */; };
+		6B98781F2073213F0084372F /* RuleThenActionPropertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877F12073213F0084372F /* RuleThenActionPropertyCell.xib */; };
+		6B9878202073213F0084372F /* RuleThenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877F22073213F0084372F /* RuleThenCell.swift */; };
+		6B9878212073213F0084372F /* RuleThenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877F32073213F0084372F /* RuleThenCell.xib */; };
+		6B9878222073213F0084372F /* RuleWhenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877F42073213F0084372F /* RuleWhenCell.swift */; };
+		6B9878232073213F0084372F /* RuleWhenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877F52073213F0084372F /* RuleWhenCell.xib */; };
+		6B9878242073213F0084372F /* RuleWhenConditionalElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877F62073213F0084372F /* RuleWhenConditionalElementCell.swift */; };
+		6B9878252073213F0084372F /* RuleWhenConditionalElementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877F72073213F0084372F /* RuleWhenConditionalElementCell.xib */; };
+		6B9878262073213F0084372F /* RuleWhenPatternCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877F82073213F0084372F /* RuleWhenPatternCell.swift */; };
+		6B9878272073213F0084372F /* RuleWhenPatternCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877F92073213F0084372F /* RuleWhenPatternCell.xib */; };
+		6B9878282073213F0084372F /* RuleWhenPatternConstraintCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877FA2073213F0084372F /* RuleWhenPatternConstraintCell.swift */; };
+		6B9878292073213F0084372F /* RuleWhenPatternConstraintCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9877FB2073213F0084372F /* RuleWhenPatternConstraintCell.xib */; };
+		6B98782A2073213F0084372F /* RuleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9877FE2073213F0084372F /* RuleListViewController.swift */; };
+		6B98782B2073213F0084372F /* RuleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9878002073213F0084372F /* RuleListCell.swift */; };
+		6B98782C2073213F0084372F /* RuleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9878012073213F0084372F /* RuleListCell.xib */; };
+		6B98782E2073213F0084372F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9878072073213F0084372F /* DataManager.swift */; };
+		6B98782F2073213F0084372F /* ConditionalElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9878092073213F0084372F /* ConditionalElement.swift */; };
+		6B9878302073213F0084372F /* ExpressionConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98780A2073213F0084372F /* ExpressionConstraint.swift */; };
+		6B9878312073213F0084372F /* LHS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98780B2073213F0084372F /* LHS.swift */; };
+		6B9878322073213F0084372F /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98780C2073213F0084372F /* Pattern.swift */; };
+		6B9878332073213F0084372F /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98780D2073213F0084372F /* Property.swift */; };
+		6B9878342073213F0084372F /* RHS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98780E2073213F0084372F /* RHS.swift */; };
+		6B9878352073213F0084372F /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98780F2073213F0084372F /* Rule.swift */; };
+		6B987837207321CC0084372F /* ShowJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B987836207321CC0084372F /* ShowJSONViewController.swift */; };
+		6B987855207321EC0084372F /* ChooseActionTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98783B207321EC0084372F /* ChooseActionTypeViewController.swift */; };
+		6B987857207321EC0084372F /* ChooseObjectPropertyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B987843207321EC0084372F /* ChooseObjectPropertyController.swift */; };
+		6B987858207321EC0084372F /* ChooseObjectTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B987847207321EC0084372F /* ChooseObjectTypeController.swift */; };
+		6B987859207321EC0084372F /* ChooseOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98784B207321EC0084372F /* ChooseOperatorViewController.swift */; };
+		6B98785A207321EC0084372F /* ChoosePatternIdListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98784F207321EC0084372F /* ChoosePatternIdListViewController.swift */; };
+		6B98785B207321EC0084372F /* ChoosePropertyValueTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B987853207321EC0084372F /* ChoosePropertyValueTypeViewController.swift */; };
+		6B987861207346E30084372F /* ChooseAccumulateResultTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98785E207346E30084372F /* ChooseAccumulateResultTypeViewController.swift */; };
+		6B987862207346E30084372F /* ChooseConditionalElementTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98785F207346E30084372F /* ChooseConditionalElementTypeViewController.swift */; };
+		6B98786420734DEA0084372F /* ChooseAccumulateResultOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98786320734DEA0084372F /* ChooseAccumulateResultOperatorViewController.swift */; };
+		6B98786620734E5F0084372F /* ChooseAccumulateWindowTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98786520734E5F0084372F /* ChooseAccumulateWindowTypeViewController.swift */; };
+		6B98786820734F240084372F /* ChooseAccumulateCalculateTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98786720734F240084372F /* ChooseAccumulateCalculateTypeViewController.swift */; };
+		6BAA03541FCD7E06000F4907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA03531FCD7E06000F4907 /* AppDelegate.swift */; };
+		6BAA03591FCD7E06000F4907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAA03571FCD7E06000F4907 /* Main.storyboard */; };
+		6BAA035B1FCD7E06000F4907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAA035A1FCD7E06000F4907 /* Assets.xcassets */; };
+		6BAA035E1FCD7E06000F4907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAA035C1FCD7E06000F4907 /* LaunchScreen.storyboard */; };
+		D78F3A7CFEADB8CA395B68BB /* Pods_HomeAutomationRuleDesigner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5795BDF9D22CE271B6F2C6F1 /* Pods_HomeAutomationRuleDesigner.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EF45012F6E8F8563B114A0A /* Pods-HomeAutomationRuleDesigner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAutomationRuleDesigner.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAutomationRuleDesigner/Pods-HomeAutomationRuleDesigner.release.xcconfig"; sourceTree = "<group>"; };
+		419BA9A7E7F70BB178BF2246 /* Pods-HomeAutomationRuleDesigner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAutomationRuleDesigner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAutomationRuleDesigner/Pods-HomeAutomationRuleDesigner.debug.xcconfig"; sourceTree = "<group>"; };
+		5795BDF9D22CE271B6F2C6F1 /* Pods_HomeAutomationRuleDesigner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAutomationRuleDesigner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9877C92073213F0084372F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6B9877CA2073213F0084372F /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		6B9877EA2073213F0084372F /* RuleDesignerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleDesignerViewController.swift; sourceTree = "<group>"; };
+		6B9877EC2073213F0084372F /* RuleNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleNameCell.swift; sourceTree = "<group>"; };
+		6B9877ED2073213F0084372F /* RuleNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleNameCell.xib; sourceTree = "<group>"; };
+		6B9877EE2073213F0084372F /* RuleThenActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleThenActionCell.swift; sourceTree = "<group>"; };
+		6B9877EF2073213F0084372F /* RuleThenActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleThenActionCell.xib; sourceTree = "<group>"; };
+		6B9877F02073213F0084372F /* RuleThenActionPropertyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleThenActionPropertyCell.swift; sourceTree = "<group>"; };
+		6B9877F12073213F0084372F /* RuleThenActionPropertyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleThenActionPropertyCell.xib; sourceTree = "<group>"; };
+		6B9877F22073213F0084372F /* RuleThenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleThenCell.swift; sourceTree = "<group>"; };
+		6B9877F32073213F0084372F /* RuleThenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleThenCell.xib; sourceTree = "<group>"; };
+		6B9877F42073213F0084372F /* RuleWhenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleWhenCell.swift; sourceTree = "<group>"; };
+		6B9877F52073213F0084372F /* RuleWhenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleWhenCell.xib; sourceTree = "<group>"; };
+		6B9877F62073213F0084372F /* RuleWhenConditionalElementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleWhenConditionalElementCell.swift; sourceTree = "<group>"; };
+		6B9877F72073213F0084372F /* RuleWhenConditionalElementCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleWhenConditionalElementCell.xib; sourceTree = "<group>"; };
+		6B9877F82073213F0084372F /* RuleWhenPatternCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleWhenPatternCell.swift; sourceTree = "<group>"; };
+		6B9877F92073213F0084372F /* RuleWhenPatternCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleWhenPatternCell.xib; sourceTree = "<group>"; };
+		6B9877FA2073213F0084372F /* RuleWhenPatternConstraintCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleWhenPatternConstraintCell.swift; sourceTree = "<group>"; };
+		6B9877FB2073213F0084372F /* RuleWhenPatternConstraintCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleWhenPatternConstraintCell.xib; sourceTree = "<group>"; };
+		6B9877FE2073213F0084372F /* RuleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleListViewController.swift; sourceTree = "<group>"; };
+		6B9878002073213F0084372F /* RuleListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleListCell.swift; sourceTree = "<group>"; };
+		6B9878012073213F0084372F /* RuleListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleListCell.xib; sourceTree = "<group>"; };
+		6B9878072073213F0084372F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6B9878092073213F0084372F /* ConditionalElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionalElement.swift; sourceTree = "<group>"; };
+		6B98780A2073213F0084372F /* ExpressionConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionConstraint.swift; sourceTree = "<group>"; };
+		6B98780B2073213F0084372F /* LHS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHS.swift; sourceTree = "<group>"; };
+		6B98780C2073213F0084372F /* Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		6B98780D2073213F0084372F /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		6B98780E2073213F0084372F /* RHS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHS.swift; sourceTree = "<group>"; };
+		6B98780F2073213F0084372F /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		6B987836207321CC0084372F /* ShowJSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowJSONViewController.swift; sourceTree = "<group>"; };
+		6B98783B207321EC0084372F /* ChooseActionTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseActionTypeViewController.swift; sourceTree = "<group>"; };
+		6B987843207321EC0084372F /* ChooseObjectPropertyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseObjectPropertyController.swift; sourceTree = "<group>"; };
+		6B987847207321EC0084372F /* ChooseObjectTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseObjectTypeController.swift; sourceTree = "<group>"; };
+		6B98784B207321EC0084372F /* ChooseOperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseOperatorViewController.swift; sourceTree = "<group>"; };
+		6B98784F207321EC0084372F /* ChoosePatternIdListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePatternIdListViewController.swift; sourceTree = "<group>"; };
+		6B987853207321EC0084372F /* ChoosePropertyValueTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePropertyValueTypeViewController.swift; sourceTree = "<group>"; };
+		6B98785E207346E30084372F /* ChooseAccumulateResultTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccumulateResultTypeViewController.swift; sourceTree = "<group>"; };
+		6B98785F207346E30084372F /* ChooseConditionalElementTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseConditionalElementTypeViewController.swift; sourceTree = "<group>"; };
+		6B98786320734DEA0084372F /* ChooseAccumulateResultOperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccumulateResultOperatorViewController.swift; sourceTree = "<group>"; };
+		6B98786520734E5F0084372F /* ChooseAccumulateWindowTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccumulateWindowTypeViewController.swift; sourceTree = "<group>"; };
+		6B98786720734F240084372F /* ChooseAccumulateCalculateTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccumulateCalculateTypeViewController.swift; sourceTree = "<group>"; };
+		6BAA03501FCD7E06000F4907 /* HomeAutomationRuleDesigner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAutomationRuleDesigner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAA03531FCD7E06000F4907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BAA03581FCD7E06000F4907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BAA035A1FCD7E06000F4907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BAA035D1FCD7E06000F4907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BAA035F1FCD7E06000F4907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BAA034D1FCD7E06000F4907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78F3A7CFEADB8CA395B68BB /* Pods_HomeAutomationRuleDesigner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15E778F135723DDCC52316C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5795BDF9D22CE271B6F2C6F1 /* Pods_HomeAutomationRuleDesigner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9877C82073213F0084372F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B9877C92073213F0084372F /* Constants.swift */,
+				6B9877CA2073213F0084372F /* Macros.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6B9877CB2073213F0084372F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6B987838207321EC0084372F /* Common */,
+				6B9877FC2073213F0084372F /* RuleList */,
+				6B9877E82073213F0084372F /* RuleDesigner */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6B9877E82073213F0084372F /* RuleDesigner */ = {
+			isa = PBXGroup;
+			children = (
+				6B9877E92073213F0084372F /* Controllers */,
+				6B9877EB2073213F0084372F /* Views */,
+			);
+			path = RuleDesigner;
+			sourceTree = "<group>";
+		};
+		6B9877E92073213F0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B9877EA2073213F0084372F /* RuleDesignerViewController.swift */,
+				6B987836207321CC0084372F /* ShowJSONViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B9877EB2073213F0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B9877EC2073213F0084372F /* RuleNameCell.swift */,
+				6B9877ED2073213F0084372F /* RuleNameCell.xib */,
+				6B9877EE2073213F0084372F /* RuleThenActionCell.swift */,
+				6B9877EF2073213F0084372F /* RuleThenActionCell.xib */,
+				6B9877F02073213F0084372F /* RuleThenActionPropertyCell.swift */,
+				6B9877F12073213F0084372F /* RuleThenActionPropertyCell.xib */,
+				6B9877F22073213F0084372F /* RuleThenCell.swift */,
+				6B9877F32073213F0084372F /* RuleThenCell.xib */,
+				6B9877F42073213F0084372F /* RuleWhenCell.swift */,
+				6B9877F52073213F0084372F /* RuleWhenCell.xib */,
+				6B9877F62073213F0084372F /* RuleWhenConditionalElementCell.swift */,
+				6B9877F72073213F0084372F /* RuleWhenConditionalElementCell.xib */,
+				6B9877F82073213F0084372F /* RuleWhenPatternCell.swift */,
+				6B9877F92073213F0084372F /* RuleWhenPatternCell.xib */,
+				6B9877FA2073213F0084372F /* RuleWhenPatternConstraintCell.swift */,
+				6B9877FB2073213F0084372F /* RuleWhenPatternConstraintCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B9877FC2073213F0084372F /* RuleList */ = {
+			isa = PBXGroup;
+			children = (
+				6B9877FD2073213F0084372F /* Controllers */,
+				6B9877FF2073213F0084372F /* Views */,
+			);
+			path = RuleList;
+			sourceTree = "<group>";
+		};
+		6B9877FD2073213F0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B9877FE2073213F0084372F /* RuleListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B9877FF2073213F0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B9878002073213F0084372F /* RuleListCell.swift */,
+				6B9878012073213F0084372F /* RuleListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B9878062073213F0084372F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6B9878072073213F0084372F /* DataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6B9878082073213F0084372F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B9878092073213F0084372F /* ConditionalElement.swift */,
+				6B98780A2073213F0084372F /* ExpressionConstraint.swift */,
+				6B98780B2073213F0084372F /* LHS.swift */,
+				6B98780C2073213F0084372F /* Pattern.swift */,
+				6B98780D2073213F0084372F /* Property.swift */,
+				6B98780E2073213F0084372F /* RHS.swift */,
+				6B98780F2073213F0084372F /* Rule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B987838207321EC0084372F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B98785C207346E30084372F /* ConditionalElement */,
+				6B987839207321EC0084372F /* ChooseActionType */,
+				6B987841207321EC0084372F /* ChooseObjectProperty */,
+				6B987845207321EC0084372F /* ChooseObjectType */,
+				6B987849207321EC0084372F /* ChooseOperator */,
+				6B98784D207321EC0084372F /* ChoosePatternIdList */,
+				6B987851207321EC0084372F /* ChoosePropertyValueType */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6B987839207321EC0084372F /* ChooseActionType */ = {
+			isa = PBXGroup;
+			children = (
+				6B98783A207321EC0084372F /* Controllers */,
+				6B98783C207321EC0084372F /* Views */,
+			);
+			path = ChooseActionType;
+			sourceTree = "<group>";
+		};
+		6B98783A207321EC0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B98783B207321EC0084372F /* ChooseActionTypeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B98783C207321EC0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B987841207321EC0084372F /* ChooseObjectProperty */ = {
+			isa = PBXGroup;
+			children = (
+				6B987842207321EC0084372F /* Controllers */,
+				6B987844207321EC0084372F /* Views */,
+			);
+			path = ChooseObjectProperty;
+			sourceTree = "<group>";
+		};
+		6B987842207321EC0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B987843207321EC0084372F /* ChooseObjectPropertyController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B987844207321EC0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B987845207321EC0084372F /* ChooseObjectType */ = {
+			isa = PBXGroup;
+			children = (
+				6B987846207321EC0084372F /* Controllers */,
+				6B987848207321EC0084372F /* Views */,
+			);
+			path = ChooseObjectType;
+			sourceTree = "<group>";
+		};
+		6B987846207321EC0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B987847207321EC0084372F /* ChooseObjectTypeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B987848207321EC0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B987849207321EC0084372F /* ChooseOperator */ = {
+			isa = PBXGroup;
+			children = (
+				6B98784A207321EC0084372F /* Controllers */,
+				6B98784C207321EC0084372F /* Views */,
+			);
+			path = ChooseOperator;
+			sourceTree = "<group>";
+		};
+		6B98784A207321EC0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B98784B207321EC0084372F /* ChooseOperatorViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B98784C207321EC0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B98784D207321EC0084372F /* ChoosePatternIdList */ = {
+			isa = PBXGroup;
+			children = (
+				6B98784E207321EC0084372F /* Controllers */,
+				6B987850207321EC0084372F /* Views */,
+			);
+			path = ChoosePatternIdList;
+			sourceTree = "<group>";
+		};
+		6B98784E207321EC0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B98784F207321EC0084372F /* ChoosePatternIdListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B987850207321EC0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B987851207321EC0084372F /* ChoosePropertyValueType */ = {
+			isa = PBXGroup;
+			children = (
+				6B987852207321EC0084372F /* Controllers */,
+				6B987854207321EC0084372F /* Views */,
+			);
+			path = ChoosePropertyValueType;
+			sourceTree = "<group>";
+		};
+		6B987852207321EC0084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B987853207321EC0084372F /* ChoosePropertyValueTypeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B987854207321EC0084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B98785C207346E30084372F /* ConditionalElement */ = {
+			isa = PBXGroup;
+			children = (
+				6B98785D207346E30084372F /* Controllers */,
+				6B987860207346E30084372F /* Views */,
+			);
+			path = ConditionalElement;
+			sourceTree = "<group>";
+		};
+		6B98785D207346E30084372F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B98785E207346E30084372F /* ChooseAccumulateResultTypeViewController.swift */,
+				6B98785F207346E30084372F /* ChooseConditionalElementTypeViewController.swift */,
+				6B98786320734DEA0084372F /* ChooseAccumulateResultOperatorViewController.swift */,
+				6B98786720734F240084372F /* ChooseAccumulateCalculateTypeViewController.swift */,
+				6B98786520734E5F0084372F /* ChooseAccumulateWindowTypeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B987860207346E30084372F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BAA03471FCD7E06000F4907 = {
+			isa = PBXGroup;
+			children = (
+				6BAA03521FCD7E06000F4907 /* HomeAutomationRuleDesigner */,
+				6BAA03511FCD7E06000F4907 /* Products */,
+				EFD06CD70AA4FE281471D430 /* Pods */,
+				15E778F135723DDCC52316C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BAA03511FCD7E06000F4907 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA03501FCD7E06000F4907 /* HomeAutomationRuleDesigner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BAA03521FCD7E06000F4907 /* HomeAutomationRuleDesigner */ = {
+			isa = PBXGroup;
+			children = (
+				6B9877C82073213F0084372F /* Common */,
+				6B9878062073213F0084372F /* Manager */,
+				6B9877CB2073213F0084372F /* Features */,
+				6B9878082073213F0084372F /* Models */,
+				6BAA03531FCD7E06000F4907 /* AppDelegate.swift */,
+				6BAA03571FCD7E06000F4907 /* Main.storyboard */,
+				6BAA035A1FCD7E06000F4907 /* Assets.xcassets */,
+				6BAA035C1FCD7E06000F4907 /* LaunchScreen.storyboard */,
+				6BAA035F1FCD7E06000F4907 /* Info.plist */,
+			);
+			path = HomeAutomationRuleDesigner;
+			sourceTree = "<group>";
+		};
+		EFD06CD70AA4FE281471D430 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				419BA9A7E7F70BB178BF2246 /* Pods-HomeAutomationRuleDesigner.debug.xcconfig */,
+				3EF45012F6E8F8563B114A0A /* Pods-HomeAutomationRuleDesigner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BAA034F1FCD7E06000F4907 /* HomeAutomationRuleDesigner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BAA03621FCD7E06000F4907 /* Build configuration list for PBXNativeTarget "HomeAutomationRuleDesigner" */;
+			buildPhases = (
+				7DE23286FCA82F0FE0B99E3E /* [CP] Check Pods Manifest.lock */,
+				6BAA034C1FCD7E06000F4907 /* Sources */,
+				6BAA034D1FCD7E06000F4907 /* Frameworks */,
+				6BAA034E1FCD7E06000F4907 /* Resources */,
+				13D18A53EA08E1B463DD9249 /* [CP] Embed Pods Frameworks */,
+				C5D8A7549DF7C11EF50BE267 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeAutomationRuleDesigner;
+			productName = HomeAutomationRuleDesigner;
+			productReference = 6BAA03501FCD7E06000F4907 /* HomeAutomationRuleDesigner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BAA03481FCD7E06000F4907 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SLab;
+				TargetAttributes = {
+					6BAA034F1FCD7E06000F4907 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YMQ5NBD54W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6BAA034B1FCD7E06000F4907 /* Build configuration list for PBXProject "HomeAutomationRuleDesigner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BAA03471FCD7E06000F4907;
+			productRefGroup = 6BAA03511FCD7E06000F4907 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BAA034F1FCD7E06000F4907 /* HomeAutomationRuleDesigner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BAA034E1FCD7E06000F4907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9878292073213F0084372F /* RuleWhenPatternConstraintCell.xib in Resources */,
+				6B98782C2073213F0084372F /* RuleListCell.xib in Resources */,
+				6B9878252073213F0084372F /* RuleWhenConditionalElementCell.xib in Resources */,
+				6BAA035E1FCD7E06000F4907 /* LaunchScreen.storyboard in Resources */,
+				6BAA035B1FCD7E06000F4907 /* Assets.xcassets in Resources */,
+				6B9878212073213F0084372F /* RuleThenCell.xib in Resources */,
+				6B9878272073213F0084372F /* RuleWhenPatternCell.xib in Resources */,
+				6B9878232073213F0084372F /* RuleWhenCell.xib in Resources */,
+				6B98781B2073213F0084372F /* RuleNameCell.xib in Resources */,
+				6BAA03591FCD7E06000F4907 /* Main.storyboard in Resources */,
+				6B98781D2073213F0084372F /* RuleThenActionCell.xib in Resources */,
+				6B98781F2073213F0084372F /* RuleThenActionPropertyCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D18A53EA08E1B463DD9249 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeAutomationRuleDesigner/Pods-HomeAutomationRuleDesigner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeAutomationRuleDesigner/Pods-HomeAutomationRuleDesigner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE23286FCA82F0FE0B99E3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeAutomationRuleDesigner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D8A7549DF7C11EF50BE267 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeAutomationRuleDesigner/Pods-HomeAutomationRuleDesigner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BAA034C1FCD7E06000F4907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B98786820734F240084372F /* ChooseAccumulateCalculateTypeViewController.swift in Sources */,
+				6B987861207346E30084372F /* ChooseAccumulateResultTypeViewController.swift in Sources */,
+				6B9878322073213F0084372F /* Pattern.swift in Sources */,
+				6B9878262073213F0084372F /* RuleWhenPatternCell.swift in Sources */,
+				6B987857207321EC0084372F /* ChooseObjectPropertyController.swift in Sources */,
+				6B9878342073213F0084372F /* RHS.swift in Sources */,
+				6B987862207346E30084372F /* ChooseConditionalElementTypeViewController.swift in Sources */,
+				6B9878312073213F0084372F /* LHS.swift in Sources */,
+				6B9878112073213F0084372F /* Macros.swift in Sources */,
+				6BAA03541FCD7E06000F4907 /* AppDelegate.swift in Sources */,
+				6B98782E2073213F0084372F /* DataManager.swift in Sources */,
+				6B98781E2073213F0084372F /* RuleThenActionPropertyCell.swift in Sources */,
+				6B98782A2073213F0084372F /* RuleListViewController.swift in Sources */,
+				6B98782F2073213F0084372F /* ConditionalElement.swift in Sources */,
+				6B9878102073213F0084372F /* Constants.swift in Sources */,
+				6B98786620734E5F0084372F /* ChooseAccumulateWindowTypeViewController.swift in Sources */,
+				6B9878302073213F0084372F /* ExpressionConstraint.swift in Sources */,
+				6B9878332073213F0084372F /* Property.swift in Sources */,
+				6B98785B207321EC0084372F /* ChoosePropertyValueTypeViewController.swift in Sources */,
+				6B9878222073213F0084372F /* RuleWhenCell.swift in Sources */,
+				6B98781C2073213F0084372F /* RuleThenActionCell.swift in Sources */,
+				6B987858207321EC0084372F /* ChooseObjectTypeController.swift in Sources */,
+				6B9878202073213F0084372F /* RuleThenCell.swift in Sources */,
+				6B98781A2073213F0084372F /* RuleNameCell.swift in Sources */,
+				6B9878352073213F0084372F /* Rule.swift in Sources */,
+				6B9878242073213F0084372F /* RuleWhenConditionalElementCell.swift in Sources */,
+				6B98785A207321EC0084372F /* ChoosePatternIdListViewController.swift in Sources */,
+				6B9878192073213F0084372F /* RuleDesignerViewController.swift in Sources */,
+				6B98782B2073213F0084372F /* RuleListCell.swift in Sources */,
+				6B987837207321CC0084372F /* ShowJSONViewController.swift in Sources */,
+				6B98786420734DEA0084372F /* ChooseAccumulateResultOperatorViewController.swift in Sources */,
+				6B987859207321EC0084372F /* ChooseOperatorViewController.swift in Sources */,
+				6B9878282073213F0084372F /* RuleWhenPatternConstraintCell.swift in Sources */,
+				6B987855207321EC0084372F /* ChooseActionTypeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6BAA03571FCD7E06000F4907 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BAA03581FCD7E06000F4907 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BAA035C1FCD7E06000F4907 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BAA035D1FCD7E06000F4907 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BAA03601FCD7E06000F4907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BAA03611FCD7E06000F4907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BAA03631FCD7E06000F4907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419BA9A7E7F70BB178BF2246 /* Pods-HomeAutomationRuleDesigner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMQ5NBD54W;
+				INFOPLIST_FILE = HomeAutomationRuleDesigner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slab.chatbot.HomeAutomationRuleDesigner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6BAA03641FCD7E06000F4907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF45012F6E8F8563B114A0A /* Pods-HomeAutomationRuleDesigner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMQ5NBD54W;
+				INFOPLIST_FILE = HomeAutomationRuleDesigner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slab.chatbot.HomeAutomationRuleDesigner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BAA034B1FCD7E06000F4907 /* Build configuration list for PBXProject "HomeAutomationRuleDesigner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAA03601FCD7E06000F4907 /* Debug */,
+				6BAA03611FCD7E06000F4907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BAA03621FCD7E06000F4907 /* Build configuration list for PBXNativeTarget "HomeAutomationRuleDesigner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAA03631FCD7E06000F4907 /* Debug */,
+				6BAA03641FCD7E06000F4907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BAA03481FCD7E06000F4907 /* Project object */;
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RuleWhenPatternConstraintCell" id="KGk-i7-Jjw" customClass="RuleWhenPatternConstraintCell" customModule="HomeAutomationRuleDesigner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgZ-MM-zYj">
+                        <rect key="frame" x="280" y="7" width="120" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="kRC-Z3-sxT"/>
+                            <constraint firstAttribute="width" constant="120" id="pDO-Yt-yQ0"/>
+                        </constraints>
+                        <state key="normal" title="Choose Operator"/>
+                        <connections>
+                            <action selector="chooseOperatorButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JbJ-9g-ljQ"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Property Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n3J-fq-qKt">
+                        <rect key="frame" x="410" y="7" width="120" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="QsU-5n-T09"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="propertyValueTextFieldDidChange:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="VgL-pI-gct"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szx-Jp-pBT">
+                        <rect key="frame" x="627" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0Ra-1T-XpN"/>
+                            <constraint firstAttribute="width" constant="30" id="OvD-xR-nx8"/>
+                        </constraints>
+                        <state key="normal" image="icon_remove"/>
+                        <connections>
+                            <action selector="removeConstraintButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="I77-50-qKq"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-TP-XPh">
+                        <rect key="frame" x="150" y="7" width="120" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="sjV-33-wNf"/>
+                            <constraint firstAttribute="width" constant="120" id="yod-G1-1Fe"/>
+                        </constraints>
+                        <state key="normal" title="Choose Property"/>
+                        <connections>
+                            <action selector="choosePropertyButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p3d-6H-Osf"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Binding" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vxu-YT-v2b">
+                        <rect key="frame" x="20" y="7" width="120" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="a4m-iG-EIo"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="bindingTextFieldDidChange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="NH5-Nb-vne"/>
+                            <action selector="propertyValueTextFieldDidChange:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="a7O-7y-bv2"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FgZ-MM-zYj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ac9-JU-4dz"/>
+                    <constraint firstItem="Vxu-YT-v2b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="D2V-57-HdX"/>
+                    <constraint firstAttribute="trailing" secondItem="szx-Jp-pBT" secondAttribute="trailing" constant="10" id="G97-Ss-CzS"/>
+                    <constraint firstItem="n3J-fq-qKt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Msn-zg-ndN"/>
+                    <constraint firstItem="Upv-TP-XPh" firstAttribute="leading" secondItem="Vxu-YT-v2b" secondAttribute="trailing" constant="10" id="Rco-rl-wh7"/>
+                    <constraint firstItem="n3J-fq-qKt" firstAttribute="leading" secondItem="FgZ-MM-zYj" secondAttribute="trailing" constant="10" id="aRE-Fi-UmY"/>
+                    <constraint firstItem="Upv-TP-XPh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j4T-J5-isc"/>
+                    <constraint firstItem="Vxu-YT-v2b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="la8-Y1-HdL"/>
+                    <constraint firstItem="FgZ-MM-zYj" firstAttribute="leading" secondItem="Upv-TP-XPh" secondAttribute="trailing" constant="10" id="wWj-ds-sOp"/>
+                    <constraint firstItem="szx-Jp-pBT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xuV-eH-hDc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.66797434408854217" blue="0.62688778162480419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bindingTextField" destination="Vxu-YT-v2b" id="rlG-Re-6U2"/>
+                <outlet property="chooseOperatorButton" destination="FgZ-MM-zYj" id="HdZ-hh-8Rf"/>
+                <outlet property="choosePropertyButton" destination="Upv-TP-XPh" id="W4G-LZ-C9G"/>
+                <outlet property="propertyValueTextField" destination="n3J-fq-qKt" id="bfs-uX-abG"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_remove" width="96" height="96"/>
+    </resources>
+</document>

@@ -1,0 +1,29 @@
+PODS:
+  - CocoaAsyncSocket (7.6.1)
+  - EVReflection (4.16.3):
+    - EVReflection/Core (= 4.16.3)
+  - EVReflection/Core (4.16.3)
+  - IQKeyboardManagerSwift (4.0.10)
+  - SVProgressHUD (2.1.2)
+  - SwiftSocket (2.0.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - EVReflection
+  - IQKeyboardManagerSwift
+  - SVProgressHUD
+  - SwiftSocket
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  EVReflection: 78a60b3c628a2e765652cdc554a903a3e40b16c8
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftSocket: 2d814afdc97c89217982f86fd036c1874134a63f
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 537a02e0cb9a6d4d6f86131db4cf5b708cd5fec2
+
+COCOAPODS: 1.3.1
